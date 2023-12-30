@@ -1,0 +1,63 @@
+.todo-form {
+}
+form {
+  width: 100%;
+  height: 16rem;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 4px 4px 8px black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+form:hover {
+  box-shadow: 8px 8px 10px black;
+  background-color: rgb(14, 14, 14);
+}
+form label {
+  font-size: 1.1rem;
+}
+.todo-form input,
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin-top: 5px;
+  box-shadow: 2px 2px 4px black;
+  border: 1px solid black;
+  background-color: rgb(5, 5, 5);
+  transition: 0.3s;
+  color: rgb(255, 255, 255, 0.7);
+}
+.todo-form input:hover,
+textarea:hover {
+  box-shadow: 4px 4px 8px black;
+  background-color: rgb(8, 8, 8);
+}
+.form-btn {
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  background-color: black;
+  cursor: pointer;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 800px) {
+  form {
+    width: 80%;
+    height: 17rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
